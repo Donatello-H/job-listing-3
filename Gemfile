@@ -40,7 +40,9 @@ gem 'devise'
 gem 'simple_form'
 gem 'font-awesome-rails'
 gem 'carrierwave'
-
+gem 'ransack'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 
 
