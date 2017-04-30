@@ -22,15 +22,17 @@
 
 //------------图片--------------//
  .jumbotron {
+
    background-image:url('http://ooyzrawt5.bkt.clouddn.com/636107620607078970-882532983_fitness-girls.jpg');
    background-repeat: no-repeat;
    background-size: cover;
-   padding-bottom: 400px;
+   padding-bottom: 300px;
+   padding-top: 100px;
  }
 
   .container-fluid .jumbotron{
     padding-bottom: 110px;//内部的底部边距，这样按钮不会很靠近底部了
-    margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
+    margin: 0 -15px 0px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
     border-radius: 0;//圆角为0
   }
 
@@ -160,25 +162,39 @@
 
  //---------Content---------
 
+  .content {
+    background-color: #5f5f64 ;
+    margin-left: -15px;
+    margin-right: -15px;
+
+
+  }
+
+
   .content-section-a {
-      padding: 50px 0;
-      background-color: #f8f8f8;
+
+      padding: 100px 0;
+      margin-left: -50px;
+      margin-right: -50px;
+
   }
 
   .content-section-b {
       padding: 50px 0;
-      border-top: 1px solid #e7e7e7;
-      border-bottom: 1px solid #e7e7e7;
+      border-top: 20px ;
+      border-bottom: 10px ;
+      margin-left: -50px;
+      margin-right: -50px;
   }
 
   .section-heading-spacer {
       float: left;
       width: 200px;
-      border-top: 3px solid #e7e7e7;
+      border-top: 3px solid #300000;
   }
 
   .section-heading {
-      margin-bottom: 30px;
+      margin-bottom: 0px;
   }
 
   .lead {
@@ -198,7 +214,7 @@
 
   footer .footer-below {
       padding: 25px 0;
-      background-color: #233140;
+      background-color: #212121;
   }
 
 
