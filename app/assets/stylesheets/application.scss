@@ -20,6 +20,18 @@
  @import "font-awesome";
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
+ html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 100px;
+  }
+
+
+
 //------------图片--------------//
  .jumbotron {
 
@@ -75,6 +87,19 @@
      margin-bottom: 0;
      border-radius: 0;
  }
+
+ .navbar-fixed-top {
+     top: 0px;
+ }
+
+ .navbar-fixed-top, .navbar-fixed-bottom {
+     position: fixed;
+     top: 0px;
+     right: 0;
+     left: 0;
+     z-index: 1030;
+ }
+
 
  .navbar-default .navbar-brand {
      color: #EF6C00;
@@ -198,15 +223,37 @@
   }
 
   .section-heading {
-      color: #FFA500;
+      color: #FAFAFA;
       margin-bottom: 0px;
   }
 
   .lead {
       font-size: 20px;
       font-weight: 400;
-      color: #DCDCDC;
+      color: #FF9800;
   }
+
+
+//----------------轮播----
+
+.myCarousel-bg {
+     background-image: url(http://ooyzrawt5.bkt.clouddn.com/%E8%83%8C%E6%99%AF.jpg);
+     background-repeat: no-repeat;
+     background-size:cover;
+
+}
+
+.carousel-indicators{
+  margin-bottom: 30px;
+}
+
+.carousel-caption {
+  margin-bottom: 60px;
+}
+
+
+
+
 
 
 
@@ -214,14 +261,20 @@
 
    //---------Footer---------
 
-  footer {
-      color: white;
-  }
+   .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 100px;
+      background-color: #222222;
+      margin: 0;
 
-  footer .footer-below {
-      padding: 25px 0;
-      background-color: #212121;
-  }
+   .footer-p {
+         color: white;
+        margin-top: 30px;
+      }
+     }
 
 
 
